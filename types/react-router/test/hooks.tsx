@@ -15,7 +15,7 @@ const HooksTest: React.FC = () => {
     const { id } = useParams();
     const params = useParams<Params>();
     const match1 = useRouteMatch<Params>('/:id');
-    const match2 = useRouteMatch<Params>({ path: '/:id', exact: true });
+    const match2 = useRouteMatch<Params>(['/:id/a', '/:id/b']);
 
     history.location.state.s;
     location.state.s;
